@@ -1,9 +1,9 @@
-require 'bookmark_presenter'
+require 'bookmark'
 
-describe BookmarkPresenter do
+describe Bookmark do
   describe '.all' do
     it 'return a list of all bookmarks' do
-      bookmarks = BookmarkPresenter.all
+      bookmarks = Bookmark.all
       expect(bookmarks).to include("http://www.google.com")
     end
   end
